@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>architects</title>
+    <!-- remix icom  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- include stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <!-- header nav section -->
@@ -16,7 +19,11 @@
                 <div class="logo-container">
                     <h2 class="logo font-weight7">G3 Architects</h2>
                 </div>
-                <div class="navlinks">
+                <!-- checkbox for toggle working -->
+                <input type="checkbox" id="toggle-input" hidden>
+                <!-- toggle icon  -->
+                <label for="toggle-input"><i class=" toggle-icon ri-bar-chart-horizontal-line"></i></label>                
+                <div class="navlinks active">
                     <ul class="d-flex gap40">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -162,30 +169,7 @@
                 </div>
             </div>
         </section>
-        <!-- Our Sponspors  -->
-        <section class="our-sponspors">
-            <div class="container">
-                <h2 class="title t-center">Our Sponspors</h2>
-                <p class="description t-center">There are many variations of passages of Lorem Ipsum available, but <br>the majority have suffered alteration.</p>
-                <div class="sponspors d-flex s-between">
-                    <div class="sponspors-logo">
-                        <img src="assets/images/sponsors/spotify.png" alt="spotify">
-                    </div>
-                    <div class="sponspors-logo">
-                        <img src="assets/images/sponsors/amazon.png" alt="amazon">
-                    </div>
-                    <div class="sponspors-logo">
-                        <img src="assets/images/sponsors/google.png" alt="google">
-                    </div>
-                    <div class="sponspors-logo">
-                        <img src="assets/images/sponsors/telerama.png" alt="telerama">
-                    </div>
-                    <div class="sponspors-logo">
-                        <img src="assets/images/sponsors/figma.png" alt="figma">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- recent blog  -->
         <section class="recent-blog">
             <div class="container">
                 <div class="title-container">
@@ -238,6 +222,30 @@
                 </div>
             </div>
         </section>
+        <!-- Our Sponspors  -->
+        <section class="our-sponspors">
+            <div class="container">
+                <h2 class="title t-center">Our Sponspors</h2>
+                <p class="description t-center">There are many variations of passages of Lorem Ipsum available, but <br>the majority have suffered alteration.</p>
+                <div class="sponspors d-flex s-between">
+                    <div class="sponspors-logo">
+                        <img src="assets/images/sponsors/spotify.png" alt="spotify">
+                    </div>
+                    <div class="sponspors-logo">
+                        <img src="assets/images/sponsors/amazon.png" alt="amazon">
+                    </div>
+                    <div class="sponspors-logo">
+                        <img src="assets/images/sponsors/google.png" alt="google">
+                    </div>
+                    <div class="sponspors-logo">
+                        <img src="assets/images/sponsors/telerama.png" alt="telerama">
+                    </div>
+                    <div class="sponspors-logo">
+                        <img src="assets/images/sponsors/figma.png" alt="figma">
+                    </div>
+                </div>
+            </div>
+        </section>        
     </main>
     <!-- footer section  -->
     <footer class="footer">

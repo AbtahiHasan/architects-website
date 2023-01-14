@@ -146,6 +146,16 @@ p {
     background: var(--primary-color);
     padding: 1.8rem;
 }
+.navigation {
+    z-index: 99;
+}
+.logo-container .logo {
+    font-size: 1.5rem;
+    white-space: nowrap;
+   }
+.toggle-icon {
+    display: none;
+}
 .navlinks ul li a{
     color: var(--dark2);
 }
@@ -223,13 +233,16 @@ p {
 .our-features .image-container{
     width: 100%;
 }
+.our-features .image-container img{
+    width: 100%;
+}
 .experience-label {
     background-color: var(--orange);
     width: 16rem;
     height: 10rem;
     position: absolute;
     bottom: 0;
-    right: 35%;
+    right: 32%;
     border-radius: 5px;
 }
 .experience-label h2{
@@ -260,6 +273,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    transition: transform .3s linear;
 }
 .facts .fact .image-container{
     display: flex;
@@ -273,30 +287,6 @@ p {
     box-shadow: var(--shadow);
     transform: skew(10deg, 10deg) scale(1.2);
     
-}
-/* our sponspors */
-.our-sponspors {
-    margin-top: 10rem;
-}
-.our-sponspors .title{
-    margin: 2rem;
-}
-.sponspors {
-    margin-top: 3rem;
-}
-.sponspors-logo img {
-    filter: grayscale(1);
-}
-
-/* footer section  */
-.footer {
-    margin-top: 5rem;
-    background: var(--primary-color)
-}
-.footer-credit {
-    padding: 2rem 0;
-    color: var(--dark2);
-    font-size: 1.2rem;
 }
 /* blog section  */
 .recent-blog {
@@ -340,4 +330,112 @@ p {
     height: var(--percent100);
     border-radius: 50%;
     overflow: hidden;
+}
+/* our sponspors */
+.our-sponspors {
+    margin-top: 10rem;
+}
+.our-sponspors .title{
+    margin: 2rem;
+}
+.sponspors {
+    margin-top: 3rem;
+}
+.sponspors-logo img {
+    filter: grayscale(1);
+}
+
+/* footer section  */
+.footer {
+    margin-top: 5rem;
+    background: var(--primary-color)
+}
+.footer-credit {
+    padding: 2rem 0;
+    color: var(--dark2);
+    font-size: 1.2rem;
+}
+/* responsive */
+@media only screen and (max-width: 992px) {
+    .banner-image {
+        display: none;
+       }
+    .our-features .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .facts, .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.3rem
+    }
+    .facts .fact:hover {
+        box-shadow: var(--shadow);
+        transform: skew(10deg, 10deg) scale(0.8);    
+        }
+    .sponspors {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0.8rem;
+    }
+    .header {
+        padding: .5rem;
+    }
+    .logo-container .logo {
+        line-height: 1rem;
+    }
+    .toggle-icon {
+        display: block;
+        font-size: 1.4rem;
+    }
+   .navlinks {    
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    width: var(--percent100);
+    padding: 1.5rem;
+    display: none;
+   }
+   .navlinks ul{
+    flex-direction: column;
+   }
+   .navlinks ul li{
+    text-align: center;
+   }
+   .navlinks ul li a{
+    color: var(--white);
+   }
+   #toggle-input:checked ~ .navlinks{
+     display: block;
+    transform: translateX(0px);
+   }
+   .banner-content h1 {
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+   }
+   .our-teams, .photo-gallery, .our-features .container, .blogs {
+     grid-template-columns: repeat(1, 1fr);
+   }
+   .facts, .sponspors {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.2rem;
+}
+   .facts, .sponspors {
+    flex-direction: column;
+   }
+   
+    .sponspors .sponspors-logo{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+   }
+   .facts .fact {
+    margin: 1rem 0;
+   }
+    
 }
