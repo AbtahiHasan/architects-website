@@ -22,9 +22,98 @@
     font-family: var(--primary-font);
 }
 /* common codes */
+/* common css code  */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.primary {
+    color: var(--primary)
+}
 a {
     text-decoration: none;
 }
 li {
     list-style: none;
+}
+h1 {
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1rem;
+}
+.line {
+    margin: 20px auto;
+    width: 100%;
+    height: 1px;    
+    background: linear-gradient(to right, rgba(192, 204, 218, .2), rgba(192, 204, 218, .5),rgba(192, 204, 218, .2));
+    color: rgba(192, 204, 218, .05)
+}
+.font-bold {
+    font-weight: bold;
+}
+.font-weight4{
+    font-weight: 400;
+}
+.font-weight5{
+    font-weight: 500;
+}
+.font-weight6{
+    font-weight: 600;
+}
+.t-center {
+    text-align: center;
+}
+.t-right {
+    text-align: right;
+}
+.d-flex {
+    display: flex;
+}
+.flex-cal{
+    flex-direction: column;
+}
+.s-between {
+    justify-content: space-between;
+}
+.s-evenly {
+    justify-content: space-evenly;
+}
+.just-center {
+    justify-content: center;
+}
+.a-items-cen {
+    align-items: center;
+}
+.gap10 {
+    gap: 10px;
+}
+.gap20 {
+    gap: 20px;
+}
+.gap30 {
+    gap: 30px;
+}
+.d-grid {
+    display: grid;
+}
+.tem-col2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.tem-col4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.tem-col5 {
+    grid-template-columns: repeat(5, 1fr);
 }
