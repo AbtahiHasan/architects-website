@@ -17,6 +17,8 @@
     /* width */
     --percent50: 50%;
     --percent100: 100%;
+    /* shadow  */
+    --shadow: 5px 5px 10px rgba(0,0,0,0.03), -5px -5px 10px rgba(0,0,0,0.03);
 }
 * {
     margin: 0;
@@ -48,9 +50,6 @@ h2 {
     font-size: 2.2rem;
 }
 h3 {
-    font-size: 1.8rem;
-}
-h4 {
     font-size: 1.2rem;
 }
 p {
@@ -114,6 +113,9 @@ p {
 }
 .gap50 {
     gap: 50px;
+}
+.gap100 {
+    gap: 100px;
 }
 .d-grid {
     display: grid;
@@ -181,4 +183,48 @@ p {
 }
 .team-info .button {
     margin-top: 4rem;
+}
+/* features section  */
+.our-features {
+    margin-top: 8rem;
+}
+.our-features .container{
+    position: relative;
+}
+
+.our-features .info > .title{
+    border-left: .2rem solid var(--orange);
+    padding-left: .5rem;
+}
+.our-features .info > .description{
+    margin-top: 1.8rem;
+}
+.features .feature{
+    width: var(--percent100);
+    padding: 1.8rem;
+    box-shadow: var(--shadow);
+    margin-top: 1.2rem;
+    border-radius: 5px;
+}
+.features .title{
+    margin: .5rem 0;
+}
+.our-features .image-container{
+    width: 100%;
+}
+.experience-label {
+    background-color: var(--orange);
+    width: 16rem;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    border-radius: 5px;
+}
+.experience-label h2{
+    font-size: 3rem;
+}
+.experience-label *{
+    text-align: center;
+    color: var(--white);
 }
