@@ -14,6 +14,9 @@
     --fw5: 500;
     --fw6: 600;
     --fw7: 700;
+    /* width */
+    --percent50: 50%;
+    --percent100: 100%;
 }
 * {
     margin: 0;
@@ -24,7 +27,7 @@
 /* common codes */
 /* common css code  */
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -53,24 +56,28 @@ h4 {
 p {
     font-size: 1rem;
 }
-.line {
-    margin: 20px auto;
-    width: 100%;
-    height: 1px;    
-    background: linear-gradient(to right, rgba(192, 204, 218, .2), rgba(192, 204, 218, .5),rgba(192, 204, 218, .2));
-    color: rgba(192, 204, 218, .05)
+.btn-primary {
+    padding: 1.9rem 2.2rem;
+    background: var(--orange);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.3rem;
 }
 .font-bold {
     font-weight: bold;
 }
 .font-weight4{
-    font-weight: 400;
+    font-weight: var(--fw4);
 }
 .font-weight5{
-    font-weight: 500;
+    font-weight: var(--fw5);
 }
 .font-weight6{
-    font-weight: 600;
+    font-weight: var(--fw6);
+}
+.font-weight7{
+    font-weight: var(--fw7);
 }
 .t-center {
     text-align: center;
@@ -96,14 +103,17 @@ p {
 .a-items-cen {
     align-items: center;
 }
-.gap10 {
-    gap: 10px;
-}
 .gap20 {
     gap: 20px;
 }
 .gap30 {
     gap: 30px;
+}
+.gap40 {
+    gap: 40px;
+}
+.gap50 {
+    gap: 50px;
 }
 .d-grid {
     display: grid;
@@ -116,4 +126,31 @@ p {
 }
 .tem-col5 {
     grid-template-columns: repeat(5, 1fr);
+}
+
+/* header nav */
+.header {
+    background: var(--primary-color);
+    padding: 1.8rem;
+}
+.navlinks ul li a{
+    color: var(--dark2);
+}
+.banner-content h1 {
+    font-size: 4rem;
+    margin-top: 3.5rem;
+    line-height: 5rem;
+}
+.banner-content p {
+    margin-top: 1.5rem;
+}
+.banner-content .button{
+    margin-top: 2rem;
+}
+.banner-image {
+    width: var(--percent100);
+    margin-top: 5rem;
+}
+.banner-image img{
+    width: var(--percent100);
 }
