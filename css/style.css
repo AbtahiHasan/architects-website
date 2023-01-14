@@ -4,7 +4,7 @@
     --primary-color :#ff900e1a;
     --dark1: #131313;
     --dark2: #424242;
-    --dark2: #727272;
+    --dark3: #727272;
     --orange: #FF900E;
     --white: #ffffff;
     /* fonts */
@@ -153,4 +153,32 @@ p {
 }
 .banner-image img{
     width: var(--percent100);
+}
+/* our team section */
+.our-teams {
+    margin-top: 5.5rem;
+}
+.photo-gallery .photo{
+    width: var(--percent100);
+}
+.photo-gallery .photo img{
+    width: var(--percent100);
+}
+.team-info .title {
+    font-weight: var(--fw7);
+    font-size: 3rem;
+}
+.team-info .title span:first-child {
+    font-weight: var(--fw4);
+    color: var(--dark3);
+}
+.team-info .title span:last-child {
+    color: var(--orange);
+}
+.team-info .description {
+    color: var(--dark3);
+    margin-top: 1.5rem;
+}
+.team-info .button {
+    margin-top: 4rem;
 }
