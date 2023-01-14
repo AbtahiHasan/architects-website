@@ -266,3 +266,27 @@ p {
     transform: skew(10deg, 10deg) scale(1.2);
     
 }
+/* our sponspors */
+.our-sponspors {
+    margin-top: 10rem;
+}
+.our-sponspors .title{
+    margin: 2rem;
+}
+.sponspors {
+    margin-top: 3rem;
+}
+.sponspors-logo img {
+    filter: grayscale(1);
+}
+
+/* footer section  */
+.footer {
+    margin-top: 5rem;
+    background: var(--primary-color)
+}
+.footer-credit {
+    padding: 2rem 0;
+    color: var(--dark2);
+    font-size: 1.2rem;
+}
