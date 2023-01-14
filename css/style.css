@@ -96,6 +96,9 @@ p {
 .s-evenly {
     justify-content: space-evenly;
 }
+.s-around {
+    justify-content: space-around;
+}
 .just-center {
     justify-content: center;
 }
@@ -227,4 +230,39 @@ p {
 .experience-label *{
     text-align: center;
     color: var(--white);
+}
+/* some facts section  */
+.some-facts {
+    margin-top: 5.5rem;
+}
+.some-facts .title{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.some-facts .description{
+    margin: 1rem 0;
+}
+.facts {
+    margin-top: 6rem;
+}
+.facts .fact {
+    padding: 1.7rem;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.facts .fact .image-container{
+    display: flex;
+    justify-content: center;
+}
+.facts .fact .info{
+    text-align: center;
+}
+/* facts hover effect */
+.facts .fact:hover {
+    box-shadow: var(--shadow);
+    transform: skew(10deg, 10deg) scale(1.2);
+    
 }
