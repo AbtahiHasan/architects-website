@@ -331,6 +331,9 @@ p {
     border-radius: 50%;
     overflow: hidden;
 }
+.author .author-name {
+    color: var(--dark2);
+}
 /* our sponspors */
 .our-sponspors {
     margin-top: 10rem;
