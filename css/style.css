@@ -371,7 +371,7 @@ p {
         width: 7rem;
         height: 5rem;
         position: absolute;
-        bottom: -2rem;
+        bottom: 0rem;
         right: 40%;
         border-radius: 5px;
     }
