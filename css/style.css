@@ -360,8 +360,20 @@ p {
     .banner-image {
         display: none;
        }
-    .our-features .container {
+    .our-features .container, .our-teams {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .experience-label {
+        background-color: var(--orange);
+        width: 7rem;
+        height: 5rem;
+        position: absolute;
+        bottom: -2rem;
+        right: 40%;
+        border-radius: 5px;
+    }
+    .experience-label h2{
+        font-size: 1.4rem;
     }
     .facts, .blogs {
         display: grid;
@@ -421,6 +433,13 @@ p {
    .our-teams, .photo-gallery, .our-features .container, .blogs {
      grid-template-columns: repeat(1, 1fr);
    }
+   .team-info .title, .our-features .info > .title{
+    font-size: 1.7rem;
+   }
+   .btn-primary {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+}
    .facts, .sponspors {
     grid-template-columns: repeat(1, 1fr);
     gap: 2.2rem;
@@ -428,14 +447,19 @@ p {
    .facts, .sponspors {
     flex-direction: column;
    }
+   .facts .fact {
+    margin: 1rem 0;
+   }
+   .some-facts .title{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
    
     .sponspors .sponspors-logo{
     display: flex;
     justify-content: center;
     margin: 2.5rem;
    }
-   .facts .fact {
-    margin: 1rem 0;
-   }
+  
     
 }
